@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Notes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+
+        <h1>My Notes.</h1>
+
+        <p class="subtitle">
+            Your thoughts, ideas and memories — all in one place.
+        </p>
+
+        <div class="input-section">
+
+            <input
+                id="title"
+                type="text"
+                placeholder="Give your note a title..."
+            >
+
+            <textarea
+                id="description"
+                placeholder="Write something worth remembering..."
+            ></textarea>
+
+            <button class="add-btn" onclick="addNote()">
+                + Create Note
+            </button>
+
+        </div>
+
+        <div class="notes-heading">
+
+            <h2>Your Collection</h2>
+
+            <span class="notes-count">
+                My Notes
+            </span>
+
+        </div>
+
+        <input
+            id="search"
+            placeholder="Search your notes..."
+            oninput="searchNotes()"
+        >
+
+        <div id="notes"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
