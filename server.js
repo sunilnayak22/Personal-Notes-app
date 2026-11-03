@@ -94,7 +94,4 @@ app.get("/api/search", (req, res) => {
     res.json(result);
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
-});
 module.exports = app;
